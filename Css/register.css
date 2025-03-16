@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -40,7 +39,6 @@ body::before {
     z-index: 1;
 }
 
-
 .logo-container {
     display: flex;
     justify-content: center;
@@ -51,7 +49,6 @@ body::before {
     width: 100px;
     height: auto;
 }
-
 
 h2 {
     text-align: center;
@@ -103,7 +100,6 @@ h2 {
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
-    margin-top: 10px;
     transition: background 0.3s ease;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
@@ -129,10 +125,14 @@ h2 {
     color: #0056b3;
 }
 
-
+/* Responsive adjustments */
 @media (max-width: 768px) {
     .form-row {
         flex-direction: column;
+    }
+
+    .btn {
+        margin-top: 0;
     }
 }
 
