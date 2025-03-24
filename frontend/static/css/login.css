@@ -23,10 +23,7 @@ body::before {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.4);
-<<<<<<< HEAD:Css/login.css
-=======
   z-index: 0;
->>>>>>> origin/Emel-Rama:frontend/static/css/login.css
 }
 
 .login-container {
@@ -40,21 +37,16 @@ body::before {
   text-align: center;
 }
 
-<<<<<<< HEAD:Css/login.css
-=======
 .logo-container {
   display: flex;
   justify-content: center;
   margin-bottom: 15px;
 }
 
->>>>>>> origin/Emel-Rama:frontend/static/css/login.css
 .logo-container img {
   width: 100px;
 }
 
-<<<<<<< HEAD:Css/login.css
-=======
 h2 {
   margin-bottom: 20px;
   font-size: 24px;
@@ -62,7 +54,6 @@ h2 {
   font-weight: bold;
 }
 
->>>>>>> origin/Emel-Rama:frontend/static/css/login.css
 .input-group {
   margin-bottom: 20px;
   text-align: left;
@@ -75,8 +66,6 @@ h2 {
   border-radius: 5px;
 }
 
-<<<<<<< HEAD:Css/login.css
-=======
 .input-group input:focus {
   border-color: #4caf50;
 }
@@ -97,16 +86,9 @@ h2 {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
->>>>>>> origin/Emel-Rama:frontend/static/css/login.css
 .btn {
   background: #4caf50;
   color: white;
-<<<<<<< HEAD:Css/login.css
-  padding: 12px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-=======
 }
 
 .btn:hover {
@@ -121,7 +103,6 @@ h2 {
 .btn-register:hover {
   background-color: #e0e0e0;
   color: #000;
->>>>>>> origin/Emel-Rama:frontend/static/css/login.css
 }
 
 .forgot-password {
@@ -135,8 +116,6 @@ h2 {
 .forgot-password:hover {
   text-decoration: underline;
 }
-<<<<<<< HEAD:Css/login.css
-=======
 
 .error {
   color: red;
@@ -154,4 +133,3 @@ h2 {
     width: 80px;
   }
 }
->>>>>>> origin/Emel-Rama:frontend/static/css/login.css
