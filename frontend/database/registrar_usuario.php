@@ -21,7 +21,7 @@ $correo = $_POST['correo'];
 $contrasena = password_hash($_POST['contrasena'], PASSWORD_DEFAULT);
 
 if (empty($identificacion) || empty($nombre) || empty($apellido) || empty($fecha_nacimiento) || empty($sexo) || empty($direccion) || empty($ciudad) || empty($correo) || empty($_POST['contrasena'])) {
-    echo "<script>alert('Todos los campos son obligatorios.'); window.location='../frontend/layout/register.html';</script>";
+    echo "<script>alert('Todos los campos son obligatorios.'); window.location='register.html';</script>";
     exit();
 }
 
@@ -31,7 +31,7 @@ $stmt->execute();
 $stmt->store_result();
 
 if ($stmt->num_rows > 0) {
-    echo "<script>alert('El usuario ya está registrado con ese número de identificación o correo.'); window.location='../frontend/layout/register.html';</script>";
+    echo "<script>alert('El usuario ya está registrado con ese número de identificación o correo.'); window.location='register.html';</script>";
     exit();
 }
 $stmt->close();
@@ -40,13 +40,11 @@ $insert = $conn->prepare("INSERT INTO clientes (identificacion, nombre, apellido
 $insert->bind_param("sssssssss", $identificacion, $nombre, $apellido, $fecha_nacimiento, $sexo, $direccion, $ciudad, $correo, $contrasena);
 
 if ($insert->execute()) {
-    
-    header("Location: ../frontend/layout/login.html");
-    exit();
+    echo "<script>alert('Usuario registrado exitosamente.'); window.location='login.html';</script>";
 } else {
-    echo "<script>alert('Error al registrar el usuario.'); window.location='../frontend/layout/register.html';</script>";
+    echo "<script>alert('Error al registrar el usuario.'); window.location='register.html';</script>";
 }
 
 $insert->close();
 $conn->close();
-?>
+?>  
