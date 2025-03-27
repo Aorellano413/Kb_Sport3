@@ -8,4 +8,4 @@ _Aquí colocaremos toda la documentación del programa, tanto sus componentes c�
 
 ## Frameworks utilizados:
 
-- [React](https://es.react.dev/)
+- <a href="https://es.react.dev/" target="_blank">React<a/>
