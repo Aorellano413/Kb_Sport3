@@ -7,50 +7,69 @@
 body {
   background: url("../img/fondoPagina.jpg") no-repeat center center fixed;
   background-size: cover;
-  font-family: Arial, sans-serif;
+  font-family: "Poppins", Arial, sans-serif;
   color: white;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
+/* HEADER */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 40px;
-  background: rgba(0, 0, 0, 0.7);
+  padding: 15px 60px;
+  background: rgba(0, 0, 0, 0.85);
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
   z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
+/* Logo */
 .logo img {
-  width: 70px;
+  width: 80px;
+  transition: transform 0.3s ease-in-out;
 }
 
-.nav-links {
-  list-style: none;
+.logo img:hover {
+  transform: scale(1.1);
+}
+
+/* NAVBAR */
+.navbar {
   display: flex;
-  gap: 20px;
+  gap: 15px;
+  margin-left: auto; /* Alinea los botones a la derecha */
 }
 
-.nav-links a {
+.navbar a {
   color: white;
   text-decoration: none;
   font-weight: bold;
   font-size: 1.1rem;
-  transition: color 0.3s, transform 0.2s;
+  padding: 12px 18px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
 }
 
-.nav-links a:hover {
-  color: red;
+/* Efecto hover */
+.navbar a:hover {
+  background: rgba(255, 255, 255, 0.3);
   transform: scale(1.1);
 }
 
+/* CATALOGO */
 #catalogo {
   text-align: center;
-  padding: 100px 20px 50px;
+  padding: 140px 20px 50px;
   color: white;
 }
 
@@ -59,6 +78,7 @@ header {
   margin-bottom: 20px;
 }
 
+/* PRODUCTOS */
 .productos {
   display: flex;
   justify-content: center;
@@ -88,16 +108,7 @@ header {
   object-fit: cover;
 }
 
-.producto h2 {
-  font-size: 1.3rem;
-  margin: 10px 0;
-}
-
-.producto p {
-  font-size: 1rem;
-  margin-bottom: 10px;
-}
-
+/* BOTÓN COMPRAR */
 .btn-comprar {
   display: inline-block;
   padding: 10px 15px;
@@ -106,13 +117,15 @@ header {
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
-  transition: background 0.3s;
+  transition: background 0.3s ease-in-out, transform 0.2s;
 }
 
 .btn-comprar:hover {
   background: #d13a00;
+  transform: scale(1.1);
 }
 
+/* FOOTER */
 footer {
   text-align: center;
   padding: 20px 0;
@@ -127,24 +140,6 @@ footer p {
   font-weight: bold;
 }
 
-footer .social-media {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  margin-top: 10px;
-}
-
-footer .social-media img {
-  width: 30px;
-  transition: transform 0.3s ease;
-}
-
-footer .social-media img:hover {
-  transform: scale(1.2);
-}
-
-
-
 .social-media {
   display: flex;
   justify-content: center;
@@ -155,32 +150,42 @@ footer .social-media img:hover {
 .social-media img {
   width: 35px;
   transition: transform 0.3s ease;
+  filter: invert(1);
 }
 
 .social-media img:hover {
   transform: scale(1.2);
 }
 
+/* RESPONSIVE */
 @media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-end;
+  }
   #catalogo h1 {
-      font-size: 2rem;
+    font-size: 2rem;
   }
   .producto {
-      width: 80%;
+    width: 80%;
   }
 }
 
 @media (max-width: 480px) {
   header {
-      padding: 10px 20px;
+    padding: 10px 20px;
   }
   .logo img {
-      width: 50px;
+    width: 50px;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-end;
   }
   #catalogo h1 {
-      font-size: 1.8rem;
+    font-size: 1.8rem;
   }
   .producto {
-      width: 90%;
+    width: 90%;
   }
 }
