@@ -11,7 +11,7 @@ function App() {
           <img src="./static/img/LogoKb.jpg" alt="Logo de futbol" />
         </div>
         <nav className="navbar">
-          <Link to="/catalogo">Catálogo</Link>
+          <Link to="/catalogo">CATALOGO</Link>
           <Link to="/contacto">Contacto</Link>
           <Link to="/sobre-nosotros">Sobre Nosotros</Link>
           <Link to="/login">Iniciar Sesión</Link>
