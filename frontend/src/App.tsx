@@ -12,7 +12,7 @@ function App() {
         </div>
         <nav className="navbar">
           <Link to="/catalogo">CATALOGO</Link>
-          <Link to="/contacto">Contacto</Link>
+          <Link to="/contacto">CONTACTO</Link>
           <Link to="/sobre-nosotros">Sobre Nosotros</Link>
           <Link to="/login">Iniciar Sesión</Link>
         </nav>
